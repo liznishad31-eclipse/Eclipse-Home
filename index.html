@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ECLIPSE GG — Personal Digital Universe &amp; Study Tracker</title>
+    <meta
+      name="description"
+      content="ECLIPSE GG is a futuristic personal portfolio and digital universe with a full syllabus tracker, daily goals, study streaks and exam countdowns."
+    />
+    <meta name="keywords" content="ECLIPSE GG, portfolio, personal website, syllabus tracker, study planner, React" />
+    <meta name="author" content="ECLIPSE GG" />
+    <meta name="theme-color" content="#05030f" />
+    <meta name="color-scheme" content="dark light" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="ECLIPSE GG — Personal Digital Universe" />
+    <meta
+      property="og:description"
+      content="A futuristic personal portfolio with a built-in syllabus tracker, study streaks and exam countdowns."
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="ECLIPSE GG — Personal Digital Universe" />
+    <meta
+      name="twitter:description"
+      content="A futuristic personal portfolio with a built-in syllabus tracker, study streaks and exam countdowns."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "ECLIPSE GG",
+        "description": "A futuristic personal portfolio and study management dashboard."
+      }
+    </script>
+
+    <script>
+      // Apply the saved theme before first paint to avoid a flash.
+      try {
+        var t = localStorage.getItem('eclipse-gg:theme')
+        if (t === 'light') {
+          document.documentElement.classList.remove('dark')
+          document.documentElement.classList.add('light')
+        }
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>ECLIPSE GG needs JavaScript enabled to explore this digital universe.</noscript>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
